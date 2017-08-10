@@ -114,7 +114,19 @@ const pairs = [
   'cfi_usdt',
   'snm_btc',
   'snm_eth',
-  'snm_usdt'
+  'snm_usdt',
+  'dnt_btc',
+  'dnt_eth',
+  'dnt_usdt',
+  'oax_btc',
+  'oax_eth',
+  'oax_usdt',
+  'bcc_btc',
+  'bcc_usdt',
+  'bcc_eth',
+  'storj_btc',
+  'storj_eth',
+  'storj_usdt'
 ];
 
 module.exports = {

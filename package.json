@@ -1,6 +1,6 @@
 {
   "name": "cryptocurrency-ticker",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Get the current ticker information for cryptocurrencies",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sapphiredev/cryptocurrency-ticker.git"
+    "url": "git+https://github.com/radeone/cryptocurrency-ticker.git"
   },
   "keywords": [
     "bitcoin",
@@ -36,9 +36,9 @@
   "author": "sapphire",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sapphiredev/cryptocurrency-ticker/issues"
+    "url": "https://github.com/radeone/cryptocurrency-ticker/issues"
   },
-  "homepage": "https://github.com/sapphiredev/cryptocurrency-ticker#readme",
+  "homepage": "https://github.com/radeone/cryptocurrency-ticker#readme",
   "dependencies": {
     "request": "^2.81.0"
   },

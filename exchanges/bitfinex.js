@@ -42,7 +42,7 @@ module.exports = {
 				}, (err, res, body) => {
 					if(!err && res.statusCode === 200) {
 						const x = JSON.parse(body);
-						console.log(x);
+						//console.log(x);
 						resolve({
 							exchange: 'bitfinex',
 							pair: pair,
