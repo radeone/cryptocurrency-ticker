@@ -117,7 +117,8 @@ module.exports = {
 							quoteVolume: parseFloat(x.quoteVolume),
 							isFrozen: parseFloat(x.isFrozen),
 							high24hr: parseFloat(x.high24hr),
-							high24hr: parseFloat(x.low24hr)
+							low24hr: parseFloat(x.low24hr),
+							last: parseFloat(x.last)
 						});
 					}
 					else {
