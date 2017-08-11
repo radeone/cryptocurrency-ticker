@@ -111,7 +111,13 @@ module.exports = {
 							pair: pair,
 							timestamp: (new Date()).getTime(),
 							ask: parseFloat(x.lowestAsk),
-							bid: parseFloat(x.highestBid)
+							bid: parseFloat(x.highestBid),
+							percentChange: parseFloat(x.percentChange),
+							baseVolume: parseFloat(x.baseVolume),
+							quoteVolume: parseFloat(x.quoteVolume),
+							isFrozen: parseFloat(x.isFrozen),
+							high24hr: parseFloat(x.high24hr),
+							high24hr: parseFloat(x.low24hr)
 						});
 					}
 					else {

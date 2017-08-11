@@ -148,7 +148,12 @@ module.exports = {
 							pair: pair,
 							timestamp: (new Date()).getTime(),
 							ask: parseFloat(x.buy),
-							bid: parseFloat(x.sell)
+							bid: parseFloat(x.sell),
+							last: parseFloat(x.last),
+							high: parseFloat(x.high),
+							low: parseFloat(x.low),
+							vol: parseFloat(x.vol),
+							vol_cur: parseFloat(x.vol_cur)
 						});
 					}
 					else {
