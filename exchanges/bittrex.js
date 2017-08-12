@@ -272,18 +272,26 @@ module.exports = {
 		return new Promise((resolve, reject) => {
 			if(pairs.includes(pair)) {
 				request({
-					url: `https://bittrex.com/api/v1.1/public/getticker?market=${pair}`,
+					url: `https://bittrex.com/api/v1.1/public/getmarketsummary?market=${pair}`,
 					timeout: 2000
 				}, (err, res, body) => {
 					if(!err && res.statusCode === 200) {
-						const x = JSON.parse(body)["result"];
+						const x = JSON.parse(body)["result"][0];
 						console.log(x);
 						resolve({
 							exchange: 'bittrex',
 							pair: pair,
 							timestamp: (new Date()).getTime(),
 							ask: parseFloat(x.Ask),
-							bid: parseFloat(x.Bid)
+							bid: parseFloat(x.Bid),
+							high: parseFloat(x.High),
+							low: parseFloat(x.Low),
+							vol: parseFloat(x.Volume),
+							basevolume: parseFloat(x.BaseVolume),
+							openbuyorders: parseFloat(x.OpenBuyOrders),
+							opensellorders: parseFloat(x.OpenSellOrders),
+							prevday: parseFloat(x.PrevDay),
+							last: parseFloat(x.Last)
 						});
 					}
 					else {
