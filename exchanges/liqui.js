@@ -129,7 +129,10 @@ const pairs = [
   'storj_usdt',
   'cvc_btc',
   'cvc_eth',
-  'cvc_usdt'
+  'cvc_usdt',
+  'omg_btc',
+  'omg_eth',
+  'omg_usdt'
 ];
 
 module.exports = {

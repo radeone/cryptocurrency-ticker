@@ -13,6 +13,7 @@ const bitfinex = require('./exchanges/bitfinex');
 const bitstamp = require('./exchanges/bitstamp');
 const uphold = require('./exchanges/uphold');
 const bittrex = require('./exchanges/bittrex');
+const cryptopia = require('./exchanges/cryptopia');
 
 const exchanges = {
 	bithumb,
@@ -27,7 +28,8 @@ const exchanges = {
 	bitfinex,
 	bitstamp,
 	uphold,
-	bittrex
+	bittrex,
+	cryptopia
 };
 
 function availableExchanges() {
